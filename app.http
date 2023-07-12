@@ -1,0 +1,34 @@
+GET http://localhost:3000/players/
+//Get request for getting all players data
+
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+//post request for adding a new player
+
+###
+GET http://localhost:3000/players/1/
+//Get request for getting a specific player's data
+
+###
+PUT http://localhost:3000/players/12/
+Content-Type: application/json
+
+{
+  "playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
+}
+//Updating a player's data based on Id
+
+###
+DELETE http://localhost:3000/players/12/
+
+//Deleting a player's data based on Id
